@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Loops and DOM Assignment</h1>
+    <h1>Game Score Logs</h1>
 
     <div id="container">
         <h2 id="message">My Loop Project</h2>
@@ -30,15 +30,15 @@
         let message = document.getElementById("message");
 
         // FOR LOOP
-        // Creates 5 items on the page
-        for (let i = 1; i <= 5; i++) {
+        // Displays the 5 game scores
+        for (let i = 1; i < scores.length; i++) {
             let newItem = document.createElement("div");
 
             newItem.className = "item";
-            newItem.textContent = "Item " + i;
+            newItem.textContent = "Game " + (i + 1) + ": " + scores[i];
 
             items.appendChild(newItem);
-        }
+}
         // WHILE LOOP
         // Counts from 1 to 10
         let number = 1;
