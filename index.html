@@ -3,71 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops and DOM</title>
     <link rel="stylesheet" href="style.css">
-
-    </head>
+    <title>Loops and DOM</title>
+</head>
 
 <body>
-
-    <h1>Game Score Logs</h1>
-
-    <div id="container">
-        <h2 id="message">My Loop Project</h2>
+    <div class="container" id="container">
+        <h1>Game Score Logs</h1>
+        <h2 id="message">Loops and DOM</h2>
         <div id="items"></div>
         <p id="counter"></p>
-        <button onclick="changePage()">Change CSS</button>
+        <button id="changeButton">Change CSS</button>
     </div>
 
-    <script>
-        // Variable that controls the CSS
-        let score = 75;
-
-        // Get elements from the DOM
-        let container = document.getElementById("container");
-        let items = document.getElementById("items");
-        let counter = document.getElementById("counter");
-        let message = document.getElementById("message");
-
-        // FOR LOOP
-        // Displays the 5 game scores
-        for (let i = 1; i < scores.length; i++) {
-            let newItem = document.createElement("div");
-
-            newItem.className = "item";
-            newItem.textContent = "Game " + (i + 1) + ": " + scores[i];
-
-            items.appendChild(newItem);
-}
-        // WHILE LOOP
-        // Counts from 1 to 10
-        let number = 1;
-
-        while (number <= 10) {
-            counter.textContent += number + " ";
-            number++;
-        }
-
-        // Change CSS based on the value of the variable
-        function changePage() {
-
-            if (score >= 90) {
-                container.style.backgroundColor = "lightgreen";
-                container.style.borderColor = "green";
-                message.textContent = "Excellent Score!";
-            }
-            else if (score >= 70) {
-                container.style.backgroundColor = "lightyellow";
-                container.style.borderColor = "orange";
-                message.textContent = "Good Score!";
-            }
-            else {
-                container.style.backgroundColor = "lightcoral";
-                container.style.borderColor = "red";
-                message.textContent = "Keep Practicing!";
-            }
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
+    
+       
