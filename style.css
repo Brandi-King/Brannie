@@ -1,26 +1,52 @@
-.body {
+/*PAGE STYLE*/
+body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 40px;
             background-color: white;
         }
 
+        /*MAIN cONTAINER*/
 .container {
             padding: 30px;
             margin: 20px auto;
             max-width: 500px;
             border: 3px solid black;
             border-radius: 10px;
+            BACKGROUND-COLOR: WHITE;
+            transition: background-color 0.5s, border-color 0.5s;
         }
 
-.item {
+/*GAME SCORES*/
+        .item {
             padding: 10px;
             margin: 5px;
             background-color: lightblue;
+            border-radius: 5px;
         }
-
-.button {
+/*BUTTON*/
+button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+/*CSS FOR EXCELLANT SCORE*/
+.excellent {
+            background-color: lightgreen;
+            border-color: green;
+        }
+
+/*CSS FOR GOOD SCORE*/
+.good {
+            background-color: lightyellow;
+            border-color: orange;
+        }
+
+/*CSS FOR PRACTICE SCORE*/
+.practice {
+            background-color: lightcoral;
+            border-color: red;
         }

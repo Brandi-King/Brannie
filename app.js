@@ -44,22 +44,16 @@ button.onclick = function changePage() {
 
     if (score >= 90) {
         container.classList.add("excellent");
-        container.style.backgroundColor = "lightgreen";
-        container.style.borderColor = "green";
         message.textContent = "Excellent Score!";
     }
 
     else if (score >= 70) {
         container.classList.add("good");
-        container.style.backgroundColor = "lightyellow";
-        container.style.borderColor = "orange";
         message.textContent = "Good Score!";
     }
 
     else {
         container.classList.add("practice");
-        container.style.backgroundColor = "lightcoral";
-        container.style.borderColor = "red";
         message.textContent = "Keep Practicing!";
     }
 };
