@@ -39,7 +39,7 @@ button.onclick = function changePage() {
     container.classList.remove(
         "excellent", 
         "good", 
-        "average"
+        "practice"
     );
 
     if (score >= 90) {
